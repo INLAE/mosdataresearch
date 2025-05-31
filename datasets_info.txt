@@ -1,0 +1,114 @@
+=== Dataset 624: Входы и выходы вестибюлей станций Московского метрополитена
+====================================================================================================
+ ID (INTEGER)
+ Name (STRING)
+ OnTerritoryOfMoscow (DICTIONARY)
+ AdmArea (DICTIONARY)
+ District (DICTIONARY)
+ Longitude_WGS84 (STRING)
+ Latitude_WGS84 (STRING)
+ VestibuleType (DICTIONARY)
+ NameOfStation (DICTIONARY)
+ Line (DICTIONARY)
+ CulturalHeritageSiteStatus (DICTIONARY)
+ ModeOnEvenDays (STRING)
+ ModeOnOddDays (STRING)
+ FullFeaturedBPAAmount (INTEGER)
+ LittleFunctionalBPAAmount (INTEGER)
+ BPAAmount (INTEGER)
+ RepairOfEscalators (CATALOG)
+ ObjectStatus (DICTIONARY)
+ global_id (NUMBER)
+
+=== Dataset 63026: Станции Московского метрополитена, не имеющие собственных входов и выходов
+====================================================================================================
+ NameOfStation (DICTIONARY)
+ Line (DICTIONARY)
+ StationsCarryingOutEntry_Exit (CATALOG)
+ global_id (NUMBER)
+
+=== Dataset 62202: Маршруты Московских центральных диаметров
+====================================================================================================
+ ID (INTEGER)
+ DiameterName (STRING)
+ TransliterationDiameter (STRING)
+ NameOfRoute (STRING)
+ TransliterationRoute (STRING)
+ DiameterDesignation (STRING)
+ Status (DICTIONARY)
+ global_id (NUMBER)
+
+=== Dataset 62888: Станции Московских центральных диаметров
+====================================================================================================
+ StationName (STRING)
+ TransliterationStation (STRING)
+ DiameterName (DICTIONARY)
+ City (STRING)
+ District (STRING)
+ Area (STRING)
+ Tariff (DICTIONARY)
+ Platforms (INTEGER)
+ MaskStation (DICTIONARY)
+ TransferMCD (DICTIONARY)
+ TransferAeroExpress (STRING)
+ TransferMetroStation (CATALOG)
+ AeroexpressStation (LINK)
+ RailwayStation (LINK)
+ ExitTrainStations (DICTIONARY)
+ WorkingHours (CATALOG)
+ ObjectStatus (DICTIONARY)
+ global_id (NUMBER)
+
+=== Dataset 62207: Входы и выходы станций Московских центральных диаметров
+====================================================================================================
+ Name (STRING)
+ Diameter (CATALOG)
+ TypeExit (DICTIONARY)
+ OnTerritoryOfMoscow (DICTIONARY)
+ AdmArea (DICTIONARY)
+ District (DICTIONARY)
+ Latitude_WGS84 (STRING)
+ Longitude_WGS84 (STRING)
+ NameMetroExit (DICTIONARY)
+ ObjectStatus (DICTIONARY)
+ global_id (NUMBER)
+
+=== Dataset 62701: Ежемесячный рейтинг станций Московского метрополитена по количеству проходов пассажиров с льготным проездом
+====================================================================================================
+ ID (INTEGER)
+ NameOfStation (DICTIONARY)
+ Line (DICTIONARY)
+ Longitude_WGS84 (STRING)
+ Latitude_WGS84 (STRING)
+ AdmArea (DICTIONARY)
+ District (DICTIONARY)
+ Year (INTEGER)
+ Month (DICTIONARY)
+ global_id (NUMBER)
+
+=== Dataset 62741: Информация о количестве станций, вагонов и протяженности линий Московского метрополитена
+====================================================================================================
+ Line (DICTIONARY)
+ NumberOfStations (INTEGER)
+ MetroLineLength (NUMBER)
+ NumberOfCarriages (INTEGER)
+ global_id (NUMBER)
+
+=== Dataset 62743: Пассажиропоток по станциям Московского метрополитена
+====================================================================================================
+ NameOfStation (DICTIONARY)
+ Line (DICTIONARY)
+ Year (INTEGER)
+ Quarter (DICTIONARY)
+ IncomingPassengers (INTEGER)
+ OutgoingPassengers (INTEGER)
+ global_id (NUMBER)
+
+=== Dataset 62745: Точность выполнения расписания на линиях Московского метрополитена
+====================================================================================================
+ Line (DICTIONARY)
+ Year (INTEGER)
+ Quarter (DICTIONARY)
+ Precision (NUMBER)
+ global_id (NUMBER)
+
